@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 48px;
+}
+
+header h1 {
+    font-family: 'Mukta';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 4.125rem;
+
+    background: linear-gradient(264.26deg, #FF267A 0%, #FFA634 101.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header h2 {
+    color: var(--white);
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 3rem;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 24px 28px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header h2 {
+        display: none;
+    }
+}

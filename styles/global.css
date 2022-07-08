@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap');
+
+/* STYLES */
+@import url('/styles/selecionar_perfil.css');
+@import url('/styles/header.css');
+
+:root {
+    --yellow: #FFA634;
+    --white: #F9F9F9;
+    --gray: #A8A8A8;
+    --gray-dark: #181818;
+    --dark: #121214;
+}

@@ -1,0 +1,146 @@
+body {
+    background: var(--dark);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+main h3 {
+    color: var(--white);
+
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 5.438rem;
+}
+
+main h4 {
+    color: var(--white);
+
+    margin-top: 0;
+
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 3.375rem;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.profiles p {
+    color: var(--gray);
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 300px;
+}
+
+.div_adc_perfil {
+    width: 100%;
+    height: 23vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_adc_perfil button {
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.688rem;
+
+    background: var(--gray-dark);
+
+    border: none;
+
+    width: 229px;
+    height: 59px ;
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow :hidden;
+    }
+    
+    main h3 {
+        font-size: 3rem;
+    }
+
+    main h4 {
+        font-size: 2rem;
+    }
+
+    .profile {
+        width: 200px;
+    }
+
+    .profiles p {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 650px) {
+    body {
+        overflow: scroll;
+    }
+
+    main h3 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        max-height: 60px;
+    }
+
+    main h4 {
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+
+    .profiles {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profiles p {
+        font-size: 1.125rem;
+    }
+
+    .profile img {
+        width: 60%;
+    }
+
+    .div_adc_perfil button {
+        width: 90vw;
+        font-size: 1rem;
+    }
+}
