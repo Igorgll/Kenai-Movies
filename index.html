@@ -7,34 +7,40 @@
     <link rel="stylesheet" href="/styles/global.css">
     <title>Kenai Movies</title>
 </head>
-<body>
+<body onload="time()">
     <header>
         <h1>Kenai</h1>
 
-        <h2>10:43 PM</h2>
+        <h2 id="time"></h2>
     </header>
 
     <main>
         <h3>Bem-vindo de volta ao Kenai</h3>
-        <h4>Quem está usando?</h4>
+        <h4>Quem está assistindo?</h4>
 
         <div class="profiles">
-            <div class="profile">
-                <img src="./assets/img/Ellipse 25-1.png" alt="">
-                <p>Matheus Ramos</p>
-            </div>
-            <div class="profile">
-                <img src="./assets/img/Ellipse 25-2.png" alt="">
-                <p>Iuri Silva</p>
-            </div>
-            <div class="profile">
-                <img src="./assets/img/Ellipse 25.png" alt="">
-                <p>Vinicius Eiji</p>
-            </div>
+            <a href="#">
+                <div class="profile">
+                    <img src="./assets/img/vanellope.png" width="176" height="176" alt="">
+                    <p>Matheus Ramos</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="profile">
+                    <img src="./assets/img/encanto.png" width="176" height="176" alt="">
+                    <p>Iuri Silva</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="profile">
+                    <img src="./assets/img/mellinLee.jpg" width="176" height="176" alt="">
+                    <p>Vinicius Eiji</p>
+                </div>
+            </a>
         </div>
 
-        <div class="div_adc_perfil">
-            <button>Adicionar perfil</button>
+        <div class="div_adc_profile">
+            <button>Adicionar perfil +</button>
         </div>
     </main>
 

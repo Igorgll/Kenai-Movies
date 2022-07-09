@@ -1,5 +1,6 @@
 body {
     background: var(--dark);
+    overflow: hidden;
 }
 
 main {
@@ -8,7 +9,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
@@ -39,7 +40,26 @@ main h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
     gap: 4rem;
+}
+
+.profiles img {
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: all 0.6s;
+}
+
+.profiles img:hover {
+    filter: grayscale(0);
+    transform: scale(1.15);
+
+    cursor: pointer;
+}
+
+.profiles a {
+    text-decoration: none;
+    cursor: default;
 }
 
 .profiles p {
@@ -57,19 +77,20 @@ main h4 {
     align-items: center;
     flex-direction: column;
 
+    padding-top: 3rem;
+
     width: 300px;
 }
 
-.div_adc_perfil {
-    width: 100%;
-    height: 23vh;
+.div_adc_profile {
+    margin-top: 5rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.div_adc_perfil button {
+.div_adc_profile button {
     color: var(--white);
 
     font-family: 'Open Sans';
@@ -77,12 +98,21 @@ main h4 {
     font-size: 1.25rem;
     line-height: 1.688rem;
 
-    background: var(--gray-dark);
-
     border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
 
     width: 229px;
     height: 59px ;
+
+    transition: all 0.6s;
+    filter: grayscale(1);
+    background: linear-gradient(264.26deg, #FF267A 0%, #FFA634 101.03%);
+}
+
+.div_adc_profile button:hover {
+    filter: grayscale(0);
 }
 
 @media(max-width: 768px) {
@@ -136,7 +166,7 @@ main h4 {
     }
 
     .profile img {
-        width: 60%;
+        width: 90%;
     }
 
     .div_adc_perfil button {
