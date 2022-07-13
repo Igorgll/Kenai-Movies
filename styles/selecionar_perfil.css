@@ -69,6 +69,8 @@ main h4 {
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.75rem;
+
+    padding-top: 1rem;
 }
 
 .profile {
@@ -135,6 +137,16 @@ main h4 {
     .profiles p {
         font-size: 1.5rem;
     }
+    
+    .div_adc_profile button {
+        transition: all 0.6s;
+        filter: grayscale(0);
+    }
+
+    .profiles img {
+        filter: grayscale(0);
+        transition: all 0.6s;
+    }
 }
 
 @media(max-width: 650px) {
@@ -172,5 +184,15 @@ main h4 {
     .div_adc_perfil button {
         width: 90vw;
         font-size: 1rem;
+    }
+
+    .div_adc_profile button {
+        transition: all 0.6s;
+        filter: grayscale(0);
+    }
+
+    .profiles img {
+        filter: grayscale(0);
+        transition: all 0.6s;
     }
 }

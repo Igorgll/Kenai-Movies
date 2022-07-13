@@ -1,14 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700&display=swap");
 
 /* STYLES */
-@import url('/styles/selecionar_perfil.css');
-@import url('/styles/header.css');
+@import url("/styles/selecionar_perfil.css");
+@import url("/styles/header.css");
+@import url("/styles/home.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
 
 :root {
-    --yellow: #FFA634;
-    --white: #F9F9F9;
-    --gray: #A8A8A8;
-    --gray-dark: #181818;
-    --dark: #121214;
+  --yellow: #ffa634;
+  --white: #f9f9f9;
+  --gray: #a8a8a8;
+  --gray-dark: #181818;
+  --dark: #121214;
+  --linear: linear-gradient(264.26deg, #ff267a 0%, #ffa634 101.03%);
+  --linear-dark: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.8) 80.79%);
 }

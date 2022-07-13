@@ -10,7 +10,7 @@ header h1 {
     font-size: 2.5rem;
     line-height: 4.125rem;
 
-    background: linear-gradient(264.26deg, #FF267A 0%, #FFA634 101.03%);
+    background: var(--linear);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,6 +22,12 @@ header h2 {
     font-weight: 300;
     font-size: 2.25rem;
     line-height: 3rem;
+}
+
+@media (max-width: 1080px) {
+    header {
+        padding: 18px 38px;
+    }
 }
 
 @media (max-width: 650px) {

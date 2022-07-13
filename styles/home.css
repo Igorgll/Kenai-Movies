@@ -1,0 +1,382 @@
+#app {
+    background: url('/assets/img/batman.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    width: 100vw;
+    height: auto;
+    position: relative;
+
+    overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #1D1C1A;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #E3E3E3;
+    border-radius: 6px;
+  }
+  
+  :root {
+    scrollbar-color: #E3E3E3 #1D1C1A !important;
+    scrollbar-width: thin !important;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 48px;
+}
+
+nav h1 {
+    font-family: 'Mukta';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 4.125rem;
+
+    background: linear-gradient(264.26deg, #FF267A 0%, #FFA634 101.03%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+nav li {
+    cursor: pointer;
+
+}
+
+.menu__collapse {
+    display: none;
+}
+
+ul p {
+    color: var(--white);
+
+    padding-bottom: 6px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.063rem;
+}
+
+section {
+    padding: 0 0 0 48px;
+}
+
+section span {
+    color: var(--yellow);
+
+    padding: 4px 8px;
+
+    border-radius: 0px 8px;
+
+    background: var(--gray-dark);
+}
+
+.rating__time {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.rating__time p {
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+section h2 {
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 4rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+section p {
+    color: var(--white);
+
+    /* margin-top: 2rem; */
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    width: 100%;
+    max-width: 700px;
+}
+
+section button {
+    width: 286px;
+    height: 56px;
+
+    margin-top: 3rem;
+
+    color: var(--dark);
+
+    background: var(--yellow);
+    
+    border-radius: 4px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+
+    margin-top: 4rem;
+
+    background: rgb(7,9,12);
+    background: linear-gradient(180deg, rgba(7,9,12,0) 0%, rgba(18,18,20,1) 71%);
+}
+
+.movies h2 {
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+
+    padding-bottom: 3rem;
+}
+
+#underline {
+    width: 61px;
+    background: var(--yellow);
+    height: 2px;
+
+    display: block;
+
+    margin-top: 5px;
+}
+
+.movies__list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    overflow: scroll;
+    overflow-y: hidden;
+
+    list-style: none;
+}
+
+.movies__list figure {
+    position: relative;
+}
+
+figure img {
+    filter: brightness(75%);
+
+    opacity: 0.9;
+}
+
+.movies__list li{
+    width: 300px;
+    height: 440px;
+}
+
+.movies__list span {
+    position: absolute;
+
+    left: 10%;
+    top: 70%;
+
+    color: var(--yellow);
+
+    font-weight: 600;
+    font-size: 0.8rem;
+
+    color: var(--yellow);
+
+    padding: 4px 8px;
+
+    border-radius: 0px 8px;
+
+    background: var(--gray-dark);
+}
+
+#stars {
+    position: absolute;
+
+    left: 10%;
+    top: 79%;
+
+    filter: brightness(100%) !important;
+
+    opacity: 1 !important;
+}
+
+.movies__list figcaption {
+    position: absolute;
+
+    left: 10%;
+    top: 87%;
+
+    color: var(--white);
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.063rem;
+}
+
+footer {
+    padding: 48px 40px;
+
+    background: var(--dark);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h3 {
+    color: var(--white);
+
+    font-family: 'Mukta';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 4.125rem;
+}
+
+.social__media {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 24px 28px;
+    }
+
+    .menu__collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        padding-top: 1rem;
+
+        gap: 8px;
+    }
+
+    .menu__collapse span { 
+    width: 40px;
+    height: 3px;
+    
+    border-radius: 6px;
+        
+    background: var(--white);
+    
+    transition: all 0.6s;    
+    }
+
+    .menu__collapse span:last-child {
+        width: 45%;
+    }
+    
+    section {
+        padding: 24px 28px;
+    }
+    
+    section p {
+        width: 100%;
+        max-width: 400px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+                line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
+
+    #menu__links {
+        display: none;
+    }
+
+    .movies__list {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2; 
+        -webkit-box-orient: vertical;
+    }
+
+    section button {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .movies h2 {
+        font-size: 2rem;
+    }
+
+    .movies__list {
+        gap: 1.5rem;
+    }
+
+    footer h3 {
+        font-size: 2rem;
+    }
+
+    .social__media img {
+        width: 20px;
+    }
+}
