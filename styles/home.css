@@ -373,7 +373,7 @@ footer h3 {
         display: none;
     }
 
-    .movies__list {
+    #movies__list {
         gap: 2rem;
     }
 }
@@ -405,8 +405,13 @@ footer h3 {
         font-size: 2rem;
     }
 
-    .movies__list {
+    #movies__list {
         gap: 1.5rem;
+    }
+
+    #movies__list strong {
+        width: 260px !important;
+        max-width: 100%;
     }
 
     footer h3 {

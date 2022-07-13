@@ -1,11 +1,3 @@
-<!-- ## Figma Project: https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=40282%3A715 -->
-
-<!-- ## Deploy: https://igorgll-kenai-movies.netlify.app/  -->
-
-<!-- ![Imgur](https://i.imgur.com/xG3s93M.png) -->
-
-<!-- ![Imgur](https://i.imgur.com/Z7Jzvmp.png) -->
-
 <h1 align="center">
   Desafio Codelândia - Kenai Movies
 </h1>
