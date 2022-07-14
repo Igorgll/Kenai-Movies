@@ -1,3 +1,11 @@
+function nav_toggle() {
+  const button = document.getElementById('menu__collapse')
+  const nav_toggle = document.getElementById('menu__links')
+
+  button.classList.toggle('active')
+  nav_toggle.classList.toggle('active')
+}
+
 // TIMESTAMP
 function time() {
   today = new Date();
@@ -16,6 +24,8 @@ function time() {
 // MOVIES
 const API_KEY = "03c4e3dc470296959d6bf68804146538";
 const API_LANGUAGE = "pt-br";
+
+let movie_active = "tt1877830"
 
 const LIST_MOVIES = [
   "tt1877830",
@@ -54,8 +64,11 @@ function create_movie(movieId) {
       movie.innerHTML = genre + stars + title;
       movie.style.backgroundImage = `linear-gradient(180deg, rgba(14, 23, 47, 0.0001) 11.72%, #0E172F 100%), url('${image}')`;
       moviesList.appendChild(movie);
+      movie.setAttribute('id', movieId)
 
       movie.onclick = () => {
+        set_active_movie(movieId)
+
         fetch(get_url_movie(movieId))
           .then((response) => response.json())
           .then((data) => {
@@ -73,10 +86,20 @@ function create_movie(movieId) {
             runtime.innerHTML = data.runtime + ' minutos';
 
             const image = `https://image.tmdb.org/t/p/original${data.backdrop_path}`;
-            app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`;
+            app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`;            
           });
       };
     });
+}
+
+function set_active_movie(newMovieActive) {
+  const movie_current = document.getElementById(movie_active)
+  movie_current.classList.remove('active-movie')
+
+  const movie_active_new = document.getElementById(newMovieActive)
+  movie_active_new.classList.add('active-movie')
+
+  movie_active = newMovieActive
 }
 
 function load_list_movies() {
@@ -101,6 +124,6 @@ function load_first_movie() {
   app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`;
 }
 
-load_first_movie()
+load_first_movie();
 
 load_list_movies();
