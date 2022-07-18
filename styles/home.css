@@ -82,6 +82,17 @@ nav li:hover {
   display: none;
 }
 
+.nav_meme {
+  display: none;
+}
+
+#nav_profile {
+  display: none;
+}
+
+#menu__links li:nth-child(6) {
+  display: none;
+}
 
 ul p {
   color: var(--white);
@@ -337,6 +348,10 @@ footer h3 {
     padding: 24px 28px;
   }
 
+  #nav_profile {
+    display: block;
+  }
+
   #menu__collapse {
     display: flex;
     flex-direction: column;
@@ -401,14 +416,30 @@ footer h3 {
     -webkit-backdrop-filter: blur(20px);
 
     transition: all 0.6s;
+
+    z-index: 2;
   }
 
   #menu__links li:nth-child(1) {
     padding: 8px;
   }
 
-  #menu__links li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5) {
+  #menu__links li:nth-child(4), #menu__links li:nth-child(5) {
     display: none;
+  }
+
+  #menu__links li:nth-child(6) {
+      display: block;
+  }
+
+  #menu__links li:nth-child(6){
+    display: none;
+  }
+
+  #menu__links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 
   #menu__links.active {
